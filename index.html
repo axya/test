@@ -5,12 +5,13 @@
   </head>
   <body>
     <h1>My Static Website</h1>
-    <a id="elem">
-      Click for message 4
-    </a>
+    <button id="elem">
+      Click for message 5
+    </button>
     <script>
     elem.onclick = function() {
-     (window.ReactNativeWebView || window).postMessage("hello 4");
+      window.ReactNativeWebView.postMessage("hello 5")
+     (window.ReactNativeWebView || window).postMessage("hello 6");
 </script>
   </body>
 </html>
