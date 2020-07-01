@@ -6,15 +6,11 @@
   <body>
     <h1>My Static Website</h1>
     <a id="elem">
-      Click for message
+      Click for message 2
     </a>
     <script>
     elem.onclick = function() {
-     const postMessage =
-      window?.ReactNativeWebView?.postMessage ||
-      window?.postMessage;
-      postMessage('hello');
-    };
+     window && (window.ReactNativeWebView?.postMessage || window.postMessage)("hello 2");
 </script>
   </body>
 </html>
