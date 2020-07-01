@@ -10,7 +10,10 @@
     </a>
     <script>
     elem.onclick = function() {
-      window.ReactNativeWebView.postMessage("Hello");
+     const postMessage =
+      window?.ReactNativeWebView?.postMessage ||
+      window?.postMessage;
+      postMessage('hello');
     };
 </script>
   </body>
