@@ -10,7 +10,7 @@
     </a>
     <script>
     elem.onclick = function() {
-     window && (window.ReactNativeWebView?.postMessage || window.postMessage)("hello 2");
+     (window?.ReactNativeWebView?.postMessage || window?.postMessage)("hello 2");
 </script>
   </body>
 </html>
